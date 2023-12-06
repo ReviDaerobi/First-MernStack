@@ -12,7 +12,7 @@ app.use(cors())
 
 const routes = require('./routes/ToDoRoute')
 mongoose
-    .connect('mongodb://127.0.0.1:27017/databaseAnyar')
+    .connect('mongodb+srv://ReviProg:<mitsune23>@reviprog.qeozjok.mongodb.net/?retryWrites=true&w=majority')
     .then( () => console.log(`Connected To MongoDB...`))
     .catch((err) => console.log(err)),{
     useNewUrlParser:true, useUnifiedTopology:true
